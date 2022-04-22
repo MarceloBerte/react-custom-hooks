@@ -1,0 +1,23 @@
+.form {
+	display: flex;
+	flex-direction: row;
+}
+
+.form > div {
+}
+
+.form > *:not(:first-child) {
+	margin-left: 1rem;
+}
+
+.form > div label {
+	display: block;
+}
+
+.remove {
+	color: lightcoral;
+	text-decoration: underline;
+}
+.remove:hover {
+	cursor: pointer;
+}

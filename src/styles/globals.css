@@ -1,0 +1,52 @@
+@import url(reset.css);
+@import url(variables.css);
+
+body {
+	font-family: var(--font-family);
+}
+
+section {
+	padding: 1rem 0;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	border: none;
+	color: var(--lightest-color);
+	border-radius: var(--border-radius);
+	background-color: var(--primary-color);
+}
+button:hover {
+	cursor: pointer;
+}
+button:disabled {
+	opacity: 0.5;
+}
+button:active:not(:disabled) {
+	transform: translateY(2px);
+}
+
+ul {
+	padding-left: 1.5rem;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.container h2 {
+	color: var(--primary-color);
+}
+
+.container > * + * {
+	margin-top: 1rem;
+}
+
+.error {
+	color: var(--warn-color);
+	font-weight: bold;
+}

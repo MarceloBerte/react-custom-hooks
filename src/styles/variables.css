@@ -1,0 +1,10 @@
+:root {
+	--font-family: Arial, Helvetica, sans-serif;
+
+	--lightest-color: white;
+	--primary-color: #333;
+
+	--warn-color: crimson;
+
+	--border-radius: 0.25rem;
+}
